@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url(‘https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap’);
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+main {
+    background-color: #14213d;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2rem solid #fca311;
+    margin: 2rem;
+    justify-content: center;
+    align-content: center;
+    width: 800px;
+    height: 700px;
+}
+p, h1 {
+    color: #e5e5e5;
+}
+.wrapper_1 {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    grid-template-areas: 
+    "a b .";
+    width:auto;
+}
+.container_1_logo {
+    grid-area: a;
+    justify-self: flex-end;
+}
+.container_1_logo img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 1px outset #fca311;
+    margin:  1rem;
+    margin-right: 2rem;
+}
+.container_1_texto {
+    grid-area: b;
+    width: auto;
+    height: auto;
+}
+.container_1_texto h1 {
+    margin-bottom: 1rem;
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+.container_1_texto p {
+    font-size: 1.3rem;
+}
+.container_2 {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    "a"
+    "b";
+    width:auto;
+}
+.container_2 img {
+    grid-area: a;
+    width: 72rem;
+    height: 30rem;
+    border-radius: 3rem;
+    border: 1px outset #fca311
+}
+.container_2 p {
+    grid-area: b;
+    justify-items: center;
+    align-items: flex-end;
+    margin: 10px;
+    font-size: 1.7rem;
+}
+button {
+    background-color: transparent;
+    border:none;
+    color: #ffffff;
+    margin-right: 2rem;
+}
+.container_3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "a . c";
+    justify-items: flex-end;
+}
+.container_3_b1 {
+    grid-area: a;
+}
+.container_3_b2 {
+    grid-column: c;
+}
